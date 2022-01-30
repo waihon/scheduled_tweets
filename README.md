@@ -27,3 +27,7 @@ Things you may want to cover:
 
 * `rails g model User email:string password_digest:string`
 * `rails db:migrate`
+
+### 12. Validations
+
+* `rails db:migrage:redo` (equivalent to `rollback` followed by `migrate`)
