@@ -21,4 +21,9 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+## Terminal Commands
+
+### 11. Creating the User Model
+
+* `rails g model User email:string password_digest:string`
+* `rails db:migrate`
