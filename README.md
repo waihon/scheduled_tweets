@@ -35,3 +35,7 @@ Things you may want to cover:
 ### 20. Forgot Your Password"
 
 * `rails g mailer Password reset`
+
+### 23. Rails Credentials
+
+* `EDITOR="code --wait" rails credentials:edit --environment=development`
