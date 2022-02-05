@@ -39,3 +39,7 @@ Things you may want to cover:
 ### 23. Rails Credentials
 
 * `EDITOR="code --wait" rails credentials:edit --environment=development`
+
+### 24. OmniAuth 2.0 URLs
+
+* `bundle add omniauth-twitter omniauth-rails_csrf_protection`
