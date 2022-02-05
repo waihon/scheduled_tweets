@@ -31,3 +31,7 @@ Things you may want to cover:
 ### 12. Validations
 
 * `rails db:migrage:redo` (equivalent to `rollback` followed by `migrate`)
+
+### 20. Forgot Your Password"
+
+* `rails g mailer Password reset`
