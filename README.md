@@ -43,3 +43,8 @@ Things you may want to cover:
 ### 24. OmniAuth 2.0 URLs
 
 * `bundle add omniauth-twitter omniauth-rails_csrf_protection`
+
+### 25. Twitter Account Model
+
+* `rails g model TwitterAccount user:belongs_to name username image token secret`
+* `rails db:migrate`
