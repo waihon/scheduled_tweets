@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :twitter_accounts
+
   # email:string
   # password_digest:string
   #
