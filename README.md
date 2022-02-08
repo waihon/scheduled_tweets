@@ -48,3 +48,8 @@ Things you may want to cover:
 
 * `rails g model TwitterAccount user:belongs_to name username image token secret`
 * `rails db:migrate`
+
+### 29. Tweets Index and New Actions
+
+* `rails g model Tweet user:belongs_to twittter_account:belongs_to body:text publish_at:datetime tweet_id:string`
+* `rails db:migrate`
