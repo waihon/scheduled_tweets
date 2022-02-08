@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_many :twitter_accounts
-  has_many :tweets
+  has_many :tweets, dependent: :destroy
 
   # email:string
   # password_digest:string
