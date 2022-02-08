@@ -53,3 +53,8 @@ Things you may want to cover:
 
 * `rails g model Tweet user:belongs_to twittter_account:belongs_to body:text publish_at:datetime tweet_id:string`
 * `rails db:migrate`
+
+### 30 Tweet Validations
+
+* `rails g migration rename_twittter_account_id`
+* `rails db:migrate`
