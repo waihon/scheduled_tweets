@@ -30,6 +30,11 @@ class TweetsController < ApplicationController
     end
   end
 
+  def destroy
+    @tweet.destroy
+    redirect_to tweets_url, notice: "Tweet was unscheduled!"
+  end
+
   private
 
   def tweet_params
