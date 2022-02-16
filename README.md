@@ -66,3 +66,14 @@ Things you may want to cover:
 ### 34. Background Job for Posting Tweets"
 
 * `rails g job Tweet`
+
+### 36. Background Jobs with Sidekiq
+#### Terminal
+* `bundle add sidekiq`
+* `brew install redis`
+* `brew services start redis` or `/usr/local/opt/redis/bin/redis-server /usr/local/etc/redis.conf`
+* `brew info redis`
+* `bundle exec sidekiq`
+
+#### Rails Console
+* `TweetJob.perform_now(tweet)`
