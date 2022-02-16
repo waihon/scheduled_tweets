@@ -62,3 +62,7 @@ Things you may want to cover:
 ### 33. Twitter API
 
 * `bundle add twitter`
+
+### 34. Background Job for Posting Tweets"
+
+* `rails g job Tweet`
