@@ -58,3 +58,7 @@ Things you may want to cover:
 
 * `rails g migration rename_twittter_account_id`
 * `rails db:migrate`
+
+### 33. Twitter API
+
+* `bundle add twitter`
