@@ -83,6 +83,7 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
     crass (1.0.6)
     diff-lcs (1.5.0)
     domain_name (0.5.20190701)
@@ -200,6 +201,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redis (4.6.0)
     regexp_parser (2.2.0)
     reverse_markdown (2.1.1)
       nokogiri
@@ -232,6 +234,10 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
+    sidekiq (6.4.1)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.2.0)
     simple_oauth (0.3.1)
     solargraph (0.44.3)
       backport (~> 1.2)
@@ -321,6 +327,7 @@ DEPENDENCIES
   rails (~> 6.1.4, >= 6.1.4.4)
   sass-rails (>= 6)
   selenium-webdriver
+  sidekiq (~> 6.4)
   solargraph
   spring
   sqlite3 (~> 1.4)
