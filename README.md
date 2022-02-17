@@ -77,3 +77,24 @@ Things you may want to cover:
 
 #### Rails Console
 * `TweetJob.perform_now(tweet)`
+
+### 38. Deploying to Heroku
+#### Terminal
+* `bundle lock --add-platform x86_64-linux
+* `bundle lock --add-platform ruby
+* `rails db:system:change --to=postgresql`
+* `rails db:create db:migrate` after changing to PostgreSQL
+* `heroku create sched-tweets`
+* `git push heroku main`
+* `heroku run rails db:migrate`
+* `heroku addons:create heroku-redis:hobby-dev`
+
+#### Heroku Dashboard
+* After deploying `Profile`, enable `worker` via Heroku dashboard.
+* Add a new key named `RAILS_MASTER_KEY` with value equals Twitter API Key.
+
+#### Heroku Rails Console
+* `Rails.application.credentials.dig(:twitter, :api_key)`
+
+#### Twitter Developer Portal
+* Add a Callback URL for production
